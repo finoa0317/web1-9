@@ -37,9 +37,9 @@ public class ItemGenerator : MonoBehaviour
             }
             float x = Random.Range(-1, 2);
             float z = Random.Range(-1, 2);
-            itcm.transform.position = new Vector(x, 4, z);
+            item.transform.position = new Vector3(x, 4, z);
 
-            item.GetComponent<ItemController>().dropsped = this.speed;
+            item.GetComponent<ItemController>().dropSpeed = this.speed;
         }
     }
 }
